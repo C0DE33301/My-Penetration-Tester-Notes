@@ -55,12 +55,6 @@ nav_order: 1
     - If not, a request to the **Root name server** will be made.
 1. **Root DNS server**
     - The root DNS server only redirects to the correct **Top-Level Domain (TLD)** server.
-1. **Authoritative DNS Server**
-    - Responsible for storing the DNS records for a domain name.
-    - DNS records all come with a **Time To Live (TTL)** value.
-        - The value is a number represented in seconds that the response should be saved for locally until the user have to look it up again
-    1. The DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests.
-    1. Then relayed back to the original client that made the request
 
     |||||
     |---|---|---|---|
@@ -77,8 +71,13 @@ nav_order: 1
     |`k.root-servers.net`|`193.0.14.129`|`2001:7fd::1`|**RIPE NCC**|
     |`l.root-servers.net`|`199.7.83.42`|`2001:500:9f::42`|**ICANN**|
     |`m.root-servers.net`|`202.12.27.33`|`2001:dc3::35`|**WIDE Project**|
-1. **Authoritative server** | **nameserver**
-    - 
+1. **Authoritative DNS Server**
+    - Responsible for storing the DNS records for a domain name.
+    - DNS records all come with a **Time To Live (TTL)** value.
+        - The value is a number represented in seconds that the response should be saved for locally until the user have to look it up again
+    1. The DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests.
+1. **Back to the client**
+    - Then relayed back to the original client that made the request
 
 ![A DNS Request](imgs/a-request.png)
 
