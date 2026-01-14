@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Walking An Application
-parent: How The Web Works
+parent: Introduction to Web Hacking
 nav_order: 1
 ---
 

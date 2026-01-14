@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Content Discovery
-parent: How The Web Works
+parent: Introduction to Web Hacking
 nav_order: 2
 ---
 
