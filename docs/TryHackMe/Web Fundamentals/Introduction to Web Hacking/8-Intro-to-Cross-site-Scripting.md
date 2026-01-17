@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro to SSRF
+title: Intro to Cross-site Scripting
 parent: Introduction to Web Hacking
 nav_order: 8
 ---
